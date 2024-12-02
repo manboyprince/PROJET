@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titre de la page  -->
+    <title>cours HTML de 0 </title>
+    <!-- icon de longlet -->
+    <link rel="schortcut icon" href="./IMAGE.jpg">
+</head>
+
+<body>
+    <nav>
+        <!-- ul: unorderedbliste  -->
+        <ul>
+            <h2>contenu de la page</h2>
+            <li>accueil </li>
+            <li>boutique</li>
+            <li>
+                <a href="#form"> formulaire</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1>ceci est le titre principal</h1>
+        <!-- P : paragraf ou texte classique -->
+        <p>
+            <!-- em: ecriture  italiqe  -->
+            <em></em>
+            <!-- strong: texte en gras -->
+            <strong></strong>
+
+        </p>
+
+        <p>
+
+            <!-- lorem(insere un chiffre) texte latin cree  -->
+            <!-- exemple en italique -->
+            <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi at consequatur recusandae enim consectetur
+                dolor quos ipsam officiis nam delectus natus quod adipisci, numquam tenetur reiciendis inventore quam
+                ipsum accusantium?</em>
+            <!-- fin du header  -->
+
+        </p>
+    </header>
+    <main>
+        <section>
+            <h2>liste dans ordre</h2>
+            <ol>
+                <li>ceci est une</li>
+                <li>liste ddans</li>
+                <li>l'ordre </li>
+            </ol>
+
+        </section>
+        <!-- on peut enchaine le section si on veux  -->
+        <!-- comme la j'ajoute une nouvelle section pour mettre une image il es aussi pour l'accessibilite  -->
+
+        <section>
+            <h3>image en HTMLL</h3>
+            <!-- img POUR IMAGE -->
+            <!-- height hoteur de l'image -->
+            <!-- alt"image section" chemin de l'image  -->
+
+            <img src="./IMAGE.jpg" height="200" alt="image section ">
+            <!-- div ddivision  -->
+
+            <div>
+                <h4>tableau</h4>
+                <!-- table tableau -->
+                <!-- border = (insere un nombre) visibilite du tableau  -->
+                <!-- thead est pour l'entete du tableau -->
+                <!-- tr linge -->
+                <table border=4 cellpaddig="10" cellspacing="4" style="text-align: center">
+
+                    <!-- CREAION D'UNE COLLONE TH ET LA CREATION D'UNE CELLULE TD: -->
+
+                    <thead>
+                        <tr>
+                            <th>col 1</th>
+                            <th>col 2</th>
+                            <th colspan="2">col 3</th>
+
+                        </tr>
+                        <thead></thead>
+                    <tbody>
+                        <tr>
+                            <!-- roWspan agrandire la cellule a la longeur et colspan agrandir la cellule a la largeur  -->
+                            <td roWspan=2 colspan="">CELL 1</td>
+                            <td roWspan="" colspan=""> CELL 2</td>
+                            <td roWspan="" colspan="2">CELL 3</td>
+
+                        </tr>
+                        <tr>
+                            <td roWspan="" colspan="">CELL 4</td>
+                            <td roWspan="" colspan="">CELL 5</td>
+                            <td roWspan="" colspan="">CELL 6</td>
+                        </tr>
+                    </tbody>
+                    </thead>
+
+
+                </table>
+            </div>
+            <div>
+                <h5>les lien </h5>
+                <!-- a: encre ou direction d'un lieu -->
+                <a href="https://htmlcheatsheet.com" target="_blank">HTML cheat &#8594 sheet</a>
+            </div>
+            <div>
+
+                <!-- i pour icone il es aussi italique  -->
+
+                <!-- autoplay lecture de la video -->
+
+                <h6><i>&#128190</i>video</h6>
+                <video src="./BONJOUR.mp4" autoplay muted loop 200></video>
+            </div>
+
+        </section>
+        <section id="form">
+            <h2>les formulaire</h2>
+            <!-- form annoce un formulaire  -->
+            <!-- unput element dans le quel on peut tape de chose comme une bar de recherche  -->
+            <!-- il y a plusieur sorte unput un pour le texte un pour le numbre un pour la date  -->
+            <!-- ce que  on demande de faire  -->
+            <!-- id= identifient -->
+
+            <!-- pour connecter le label a sont input il faut faire   form action=""></form> -->
+            <!-- <label for="name">Nom</label> -->
+            <!-- <input type="texte" id="name"> -->
+            <!-- "for" et "id" permettent de lier le label a l'input -->
+            <!-- placeholder nom sur la bars <input type="texte" id="name" placeholder="Entre votre nom"> -->
+
+
+
+
+            <form action="">
+                <label for="name">Nom</label>
+                <input type="texte" id="name" placeholder="Entre votre nom">
+
+                <!-- <br /> metre a la linge  -->
+
+                <br />
+                <br />
+
+
+
+                <label for="age">Entre votre age</label>
+
+                <input type="number" id="age" value="13">
+
+                <br />
+
+                <!-- input de type select -->
+
+                <label for="gender">genre</label>
+                <select id="gender">
+                    <br />
+                    <option value="homme">homme</option>
+                    <option value="femme">femme</option>
+                    <option value="autre">autre</option>
+
+                </select>
+
+                <!-- input type radio  -->
+                <div>
+                    <input type="radio" name="type" id="human" checked>
+                    <label for="human">humain</label>
+
+                    <input type="radio" name="type" id="dog">
+                    <label for="dog">chien</label>
+
+                    <input type="radio" name="type" id="cat">
+                    <label for="cat">chat</label>
+                </div>
+                <textarea placeholder="votre massage...." cols="30" rows="7"></textarea>
+
+
+                <br />
+                <br />
+                <br />
+                <br />
+
+
+                <!-- input de type checkbox  -->
+                <input type="checkbox" name="" id="cgv">
+                <label for="">accepte le condition general</ label>
+                    <br />
+                    <!-- input de type sumit permet de valider -->
+                    <input type="submit" value="valide">
+
+
+
+            </form>
+            <button>ceci est un bouton</button:co,>
+    </main>
+    <footer>
+
+        <a href="mailto:manboyprince@gmail.com">contacte moi svp</a>
+        <br />
+        <a href="./notice.txt" dowload="notice">telecharge la notice</a>
+    </footer>
+
+
+</body>
+
+</html>
